@@ -1,0 +1,44 @@
+.present{
+    width: 100%;
+    height:  100vh;
+
+}
+
+.present-content{
+
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../../img/Hamburguesa.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.present-content h2{
+    color: #fff;
+    font-size: 1.9em;
+    
+}
+
+.present-content h3{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 30px;   
+}
+
+.btn-one{
+    padding: 7px 10px;
+    background: #2a0c8d;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.btn-one a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}

@@ -1,0 +1,159 @@
+
+:root{
+    --background-seccion: #020713;
+    --color-seccion: #ffffff;
+
+    --background-carrusel: #141414;
+    --background-colornombre: #1a1b1c;
+    --color-carrusel:#ffffff ;  
+
+    
+}
+
+
+.menu-sections{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../../img/Pepperoni-Pizza_5-SQjpg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 45px;
+
+
+}
+
+.contenido{
+
+	width: 90vw;
+	/* height: 60vw; */
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+	border-radius: 2.5vw;
+    background: var(--background-carrusel);
+
+}
+
+.carrusel{
+	display: grid;
+	grid-auto-flow: column;
+	scroll-behavior: auto;
+	gap: 1.2rem;
+	overflow-y: auto;
+	overscroll-behavior-x: contain ;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+
+}
+
+.carrusel a{
+    text-decoration: none;
+
+}
+
+.cardseccion{
+	scroll-snap-align: start;
+	border-radius: 2.5vw;
+	height: 70vh;
+	width: 90vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+    /* box-shadow: 0 10px 30px rgb(88, 16, 16); */
+
+}
+.imagenes{
+	border-radius: 3vw;
+	height:62vh;
+	width: 89vw;
+    position: sticky;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+
+
+.nombre{
+	border: 0;
+	background-color: var(--background-colornombre);
+	border-radius: 16px;
+	color: var(--color-carrusel);
+	display: flex;
+	height: 5vh;
+	width: auto;
+	justify-content: center;
+    align-items: center;
+	padding: 10px;
+	text-decoration: none;
+    font-size: 1.2em;
+
+	
+}
+
+
+
+@media only screen and (min-width: 720px){
+
+
+
+    .contenido{
+
+        /* width:50vw; */
+        width:70vw;
+        
+
+        /* height: 50vh; */
+        
+    }
+    .navegation.active li
+    {
+
+        font-size: 1.2em
+    }
+
+    .navegation.active li a
+    {
+
+        font-size: 1.2em
+    }
+    .cardseccion{
+        scroll-snap-align: start;
+        border-radius: 2.5vw;
+        /* height: 77vh; */
+        height: 67vh;
+
+        /* width: 50vw; */
+        width:70vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    
+    }
+    .imagenes{
+        border-radius: 3vw;
+        /* height:69vh; */
+        height: 60vh;
+
+        /* width: 49vw; */
+        width:69vw;
+
+        position: sticky;
+        object-fit: cover;
+        padding-top: 10px;
+    
+    }
+
+}
