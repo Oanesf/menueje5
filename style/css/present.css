@@ -19,14 +19,15 @@
 .present-content h2{
     color: #fff;
     font-size: 1.9em;
-    
+    text-align: center;    
 }
 
 .present-content h3{
     color: #fff;
     font-size: 1.3em;
     font-weight: 400;
-    padding: 30px;   
+    padding: 30px;
+    text-align: center;
 }
 
 .btn-one{
